@@ -1,5 +1,16 @@
 # @core/sync-service
 
+## 1.2.7
+
+### Patch Changes
+
+- f0b83fa: Fix subset\_\_params to use constant parameter name for proxy configurations
+
+  Changed subset**params from deepObject style (subset**params[1], subset**params[2]) to JSON serialization (subset**params={"1":"value1","2":"value2"}). This allows proxy configurations to match the constant parameter name "subset\_\_params" in ELECTRIC_PROTOCOL_QUERY_PARAMS without needing dynamic pattern matching.
+
+- e7b8bd0: Fix shape counting after reload and ensure shape last used repopulation
+- e7b8bd0: Separate `shape def -> handle` lookup into new table
+
 ## 1.2.6
 
 ### Patch Changes
